@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <script src="fetchAPI.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon"
+    href="https://play-lh.googleusercontent.com/LDbas6D6fLVBOfwMhe8KS37WcXyhanxshxQO3LHXqmjUgoW2a-RQ5C9GPXoxVaAzKj8l">
+  </link>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="image-animation">
+    <div class="slider">
+      <img src="https://ser-dialest.github.io/GifTastic/assets/images/PokemonLogo.png" class="pokemon-logo">
+      <button id="start" type="button" class="startBtn">OPEN POKEDEX</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header">
+      <img src="./assets/images/bluecamera.png" class="camera">
+      <img src="./assets/images/green.png" class="green-button">
+      <img src="./assets/images/yellow.png" class="yellow-button">
+      <img src="./assets/images/red.png" class="red-button">
+      <img class="pikachu-header" src="https://art.pixilart.com/60a7c101219ee5f.png">
+    </div>
+    <div class="pokedex-in">
+      <div class="pokedex-display">
+        <div class="render-display" id="render-display">
+          <div class="rendered-pokemon">
+            <div id="pokemon">
+              <img id="image" />
+            </div>
+          </div>
+          <div class="info-pokemon">
+            <p id="idPokemon" class="id-pokemon"></p>
+            <p id="name" class="name"></p>
+            <p id="type"></p>
+            <p id="abilities"></p>
+            <p id="weight"></p>
+            <p id="height"></p>
+            <p id="base"></p>
+          </div>
+        </div>
+      </div>
+      <div class="pokedex-commands">
+        <div class="pokedex-interface">
+          <button id="previous-pokemon" class="arrow" style="background-color: #DC4F33;"></button>
+          <input type="text" id="pokemon-name" placeholder="Pokemon Name or Id" />
+          <button id="next-pokemon" class="arrow" style="background-color:#52A76C"></button>
+        </div>
+        <div class="search-button">
+          <button id="search">SEARCH</button>
+        </div>
+      </div>
+      <div class="container-second-part">
+        <div class="sprites-container">
+          <p id="spritesTitle"></p>
+          <img id="spriteOne" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteTwo" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteThree" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteFour" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteFive" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteSix" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteSeven" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteEight" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteNine" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteTen" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteEleven" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+          <img id="spriteTwelve" src="https://i.pinimg.com/originals/32/eb/23/32eb230b326ee3c76e64f619a06f6ebb.png" />
+        </div>
+        <div class="second-part-informations">
+          <h1 id="informationsTitle"></h1>
+          <p id="evolution"></p>
+          <p id="gender"></p>
+          <p id="habitat"></p>
+          <p id="region"></p>
+          <p id="alert-write"></p>
+          <div class="sound-buttons">
+            <button id="play-cries-latest">Latest sound</button>
+            <button id="play-cries-legacy">Legacy sound</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
